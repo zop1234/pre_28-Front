@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
-import { TagsTopSection, TagsBottomSection } from '../../styles/Tags/Tags';
+import { TagsTopSection, TagsCardSection, TagsSection } from '../../styles/Tags/Tags';
 import TagTop from '../../components/Tags/TagTop';
 import TagsCard from '../../components/Tags/TagsCard';
 import TagPagination from '../../components/Tags/TagPagination';
@@ -30,17 +30,19 @@ function Tags() {
   }, []);
 
   return (
-    <>
+    <TagsSection>
       <TagsTopSection>
         <TagTop />
       </TagsTopSection>
-      <TagsBottomSection>
+
+      <TagsCardSection>
         {tags.result && tags.result.map((tag) => (
           <TagsCard tag={tag} key={tag.tagId} />
         ))}
-      </TagsBottomSection>
+      </TagsCardSection>
+
       {tags.pageInfo && <TagPagination pageInfo={tags.pageInfo} />}
-    </>
+    </TagsSection>
   );
 }
 

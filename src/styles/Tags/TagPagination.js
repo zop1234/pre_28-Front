@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 const PaginationSection = styled.section`
   display: flex;
-  /* margin: 30px; */
   margin-bottom: 30px;
-  margin-left: calc(55vw);
 `;
 
 const PageBox = styled.a`

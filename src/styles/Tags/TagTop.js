@@ -5,7 +5,6 @@ import SearchIcon from '../../assets/header/SearchIcon.png';
 const TagTopSection = styled.section`
   padding: 24px 20px 0 20px;
   width: 900px;
-  margin-left: 130px;
 `;
 
 const Top = styled.section`

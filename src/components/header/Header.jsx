@@ -61,7 +61,7 @@ function Header() {
       <HeaderSection>
         <HeaderMenuImg src={imageSrc} onClick={DropClickHandler} />
       </HeaderSection>
-      <HeaderSection href="/Questions">
+      <HeaderSection href="/questions">
         <HeaderLogoImg />
       </HeaderSection>
       <InputSection>

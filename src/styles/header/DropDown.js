@@ -13,6 +13,7 @@ const DropDownBody = styled.ul`
     right: 1080px;
     padding: 0;
     box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);`;
+
 const DropDownSectionTop = styled.li`
     display: flex;
     height: 50px;
@@ -66,6 +67,7 @@ const DropDownText1 = styled.li`
     color: black;
     }
 `;
+
 const DropDownText2 = styled.li`
     display: flex;
     height: 50px;
