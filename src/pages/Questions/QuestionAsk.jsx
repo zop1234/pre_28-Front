@@ -4,6 +4,7 @@ import styled from 'styled-components';
 function QuestionAsk() {
   const [form, setForm] = useState({});
   const url = import.meta.env.VITE_URL;
+  const clientUrl = import.meta.env.VITE_CLIENT_DOMAIN;
 
   const onChangeHandler = (e) => {
     if (e.target.name === 'title') {
@@ -34,8 +35,7 @@ function QuestionAsk() {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
-        window.location.href = `http://localhost:5173/questions/${json.questionId}`;
+        window.location.href = `${clientUrl}/${json.questionId}`;
       });
   };
 
