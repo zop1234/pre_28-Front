@@ -93,7 +93,7 @@ const DetailSection = styled.section`
   padding: 24px;
   width: 80%;
   max-width: 700px;
-  margin-left: 50px;
+  margin-left: calc(25vw - 1.8vw);
 `;
 
 const DetailTop = styled.section`

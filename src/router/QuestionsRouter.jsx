@@ -11,6 +11,7 @@ export default function QuestionRouter() {
       <Route path="/questions" element={<Questions />} />
       <Route path="/questions/ask" element={<QuestionAsk />} />
       <Route path="/questions/:id" element={<QuestionDetail />} />
+      <Route path="/questions/tags/:tagname" element={<Questions />} />
       <Route path="/search" element={<Questions />} />
     </Routes>
   );

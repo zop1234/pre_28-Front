@@ -27,6 +27,11 @@ const TagCardTitle = styled.button`
     background-color: #E3ECF3;
     border: 0px;
     border-radius: 3px;
+    cursor: pointer;
+    &:hover{  
+    background-color : #C7DCED;
+    }
+
 `;
 
 const TagCardTopContent = styled.a`

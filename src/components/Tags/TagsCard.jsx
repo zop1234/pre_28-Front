@@ -10,8 +10,9 @@ import {
 } from '../../styles/Tags/TagCard';
 
 function TagsCard({ tag }) {
+  const url = import.meta.env.VITE_CLIENT_DOMAIN;
   const TagClickHandler = () => {
-    window.location.href = 'http://localhost:5173/questions/';
+    window.location.href = `${url}/questions/tags/${tag.tagName}`;
   };
   return (
     <TagCardSection>

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import WorldIcon from '../../assets/header/WorldIcon.png';
 
 const DropDownBody = styled.ul`
+    z-index: 3;
     height: 250px;
     width: 240px;
     position : absolute;

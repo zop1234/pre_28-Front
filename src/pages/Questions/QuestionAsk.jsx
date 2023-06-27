@@ -35,7 +35,7 @@ function QuestionAsk() {
     })
       .then((res) => res.json())
       .then((json) => {
-        window.location.href = `${clientUrl}/${json.questionId}`;
+        window.location.href = `${clientUrl}/questions/${json.questionId}`;
       });
   };
 

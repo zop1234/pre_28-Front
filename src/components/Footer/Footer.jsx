@@ -42,12 +42,10 @@ function Footer() {
 
 export const FooterSection = styled.footer`
   position:relative;
-  z-index: 1;
   width:100%;
   height: 150px;
   background-color: #232629;
   display: flex;
-  z-index: -1;
 `;
 export const FooterWrapper = styled.div`
   color: white;

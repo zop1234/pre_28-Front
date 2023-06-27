@@ -37,13 +37,28 @@ function Questions() {
     setQuestions(json);
   };
 
+  const tagFetch = async () => {
+    const tagName = location.pathname.slice(16);
+    const res = await fetch(`${url}/questions/search?type=tag&keyword=${tagName}&page=${page}`, {
+      method: 'GET',
+      headers: {
+        'ngrok-skip-browser-warning': true,
+      },
+    });
+    const json = await res.json();
+    setQuestions(json);
+  };
+
   useEffect(() => {
-    console.log(location);
+    console.log(location.pathname.slice(0, 16));
     if (location.pathname === '/search') {
       searchFetch();
     }
     if (location.pathname === '/questions') {
       questionsFetch();
+    }
+    if (location.pathname.slice(0, 15) === '/questions/tags') {
+      tagFetch();
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

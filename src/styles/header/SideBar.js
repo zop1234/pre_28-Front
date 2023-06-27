@@ -13,7 +13,7 @@ const SideBarBody = styled.ul`
   padding: 0;
   background-color: white;
   align-items: center;
-  
+  z-index: 2;
 `;
 
 const SideBarTopSection = styled.li`
